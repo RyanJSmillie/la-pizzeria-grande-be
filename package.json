@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prestart": "node scripts/create-database.js && npm run migrate",
     "start": "nodemon index.js",
     "lint": "eslint .",
     "migrate": "node scripts/migrate.js"
