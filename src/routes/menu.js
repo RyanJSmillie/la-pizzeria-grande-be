@@ -10,13 +10,13 @@ menuRouter.get("/", menuController.getAll);
 menuRouter.get("/pizza", pizzaController.getAll);
 menuRouter.put("/pizza", pizzaController.put);
 menuRouter.delete("/pizza/:id", pizzaController.deleteById);
-menuRouter.delete("/pizza/title/:title", pizzaController.deleteByTitle);
 menuRouter.patch("/pizza/:id/price", pizzaController.updatePriceById);
+menuRouter.delete("/pizza/title/:title", pizzaController.deleteByTitle);
 
 menuRouter.get("/drinks", drinksController.getAll);
 menuRouter.put("/drinks", drinksController.put);
 menuRouter.delete("/drinks/:id", drinksController.deleteById);
-menuRouter.delete("/drinks/title/:title", drinksController.deleteByTitle);
 menuRouter.patch("/drinks/:id/price", drinksController.updatePriceById);
+menuRouter.delete("/drinks/title/:title", drinksController.deleteByTitle);
 
 module.exports = menuRouter;
