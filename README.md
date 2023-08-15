@@ -30,7 +30,6 @@ In progress
 
 - Additional routes for new menu items (Sides, Desserts, etc)
 - Additional controller functions to allow use of query parameters
--
 
 # Setup
 
@@ -71,7 +70,7 @@ You can hit `http://localhost:3001/` with the following routes either through an
 
 ### `GET`
 
-Authenticate this express application has connected with the database. If successful you will see `Connection has been established successfully.`/
+Authenticate this express application has connected with the database. If successful you will see `Connection has been established successfully.`
 
 If unsuccessful you will see `Unable to connect to the database:` followed by an error message.
 
@@ -79,7 +78,7 @@ If unsuccessful you will see `Unable to connect to the database:` followed by an
 
 ### `GET`
 
-Hitting the `/menu` endpoint will return all menu items in the format:
+Hitting this endpoint will return all menu items in the format:
 
 ```
 {
@@ -113,17 +112,15 @@ You can append the following routes to `/menu` for additional functionality.
 Hitting this endpoint will return all pizzas from the menu in the format:
 
 ```
-{
   [
     {
       id: 1,
-      title: "Frozen Margarita",
-      description: "Literally a stone cold classic, Olmeca Blanco, lime, gomme.",
-      price: 9,
-      img: "https://www.nellspizza.co.uk/wp-content/uploads/2023/06/frozen.png"
+      title: "Original Sausage Material",
+      description: "House sausage and pepperoni, marinara sauce, mozza…apeño, finished with house chilli sauce and parm.",
+      price: 16,
+      img: "https://www.nellspizza.co.uk/wp-content/uploads/2023/02/originalsausagematerial14february.png",
     },
-  ],
-};
+  ];
 ```
 
 ### `PUT`
@@ -132,10 +129,10 @@ To add a new entry to the database, hit this endpoint with a JSON body in the fo
 
 ```
 {
-  title: "Original Sausage Material",
-  description: "House sausage and pepperoni, marinara sauce, mozza…apeño, finished with house chilli sauce and parm.",
-  price: 16,
-  img: "https://www.nellspizza.co.uk/wp-content/uploads/2023/02/originalsausagematerial14february.png",
+  "title": "Original Sausage Material",
+  "description": "House sausage and pepperoni, marinara sauce, mozza…apeño, finished with house chilli sauce and parm.",
+  "price": 16,
+  "img": "https://www.nellspizza.co.uk/wp-content/uploads/2023/02/originalsausagematerial14february.png",
 }
 ```
 
